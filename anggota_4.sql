@@ -118,6 +118,6 @@ $$ LANGUAGE plpgsql;
 -- Cek sebelum ditutup
 SELECT id_toko, nama, is_open FROM Toko WHERE id_kantin = 20;
 
--- Memanggila procedure
+-- Memanggil procedure
 CALL sp_tutup_kantin(20);
 SELECT id_toko, nama, is_open FROM Toko WHERE id_kantin = 20;
