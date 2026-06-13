@@ -85,7 +85,7 @@ INSERT INTO Kantin (id_kantin, nama_kantin, lokasi) VALUES
 (40, 'Kantin Medis / PLK', 'Pusat Layanan Kesehatan ITS');
 
 -- Dummy Data Pelanggan (Mahasiswa & Staff)
-INSERT INTO Pelanggan (id_pelanggan, nama, no_hp, email, password, Departemen_id_d) VALUES
+INSERT INTO Pelanggan (id_pelanggan, nama, no_hp, email, password, id_departemen) VALUES
 ('CUST-001', 'Bella Ramadhan', '08523445264', 'bella.ramadhan@its.ac.id', 'bella123', 'DEP-024'),
 ('CUST-002', 'Eko Setiawan', '08129560434', 'eko.setiawan@its.ac.id', 'eko123', 'DEP-034'),
 ('CUST-003', 'Nisa Putri', '08579642769', 'nisa.putri@its.ac.id', 'nisa123', 'DEP-039'),
@@ -128,7 +128,7 @@ INSERT INTO Pelanggan (id_pelanggan, nama, no_hp, email, password, Departemen_id
 ('CUST-040', 'Ayu Hidayat', '08577162799', 'ayu.hidayat@its.ac.id', 'ayu123', 'DEP-039');
 
 -- Dummy Data Toko (Stand Kantin)
-INSERT INTO Toko (id_toko, nama, waktu_buka, waktu_tutup, is_open, email, password, Kantin_id_kantin) VALUES
+INSERT INTO Toko (id_toko, nama, waktu_buka, waktu_tutup, is_open, email, password, id_kantin) VALUES
 (1, 'Kantin Bu Nunun', '08:30:00', '21:00:00', FALSE, 'kantinbununun@gmail.com', 'passkantinbunu123', 21),
 (2, 'Warung Soto Cak Di', '07:00:00', '16:00:00', TRUE, 'warungsotocakdi@gmail.com', 'passwarungsoto123', 8),
 (3, 'Penyetan Mas Bro', '07:30:00', '18:00:00', TRUE, 'penyetanmasbro@gmail.com', 'passpenyetanma123', 16),
